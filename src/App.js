@@ -6,7 +6,7 @@ import Grids from './GridComponents/Grids';
 function App() {
   return (
     <>
-    <div className='bg-content-background'>
+    <div className='bg-content-background mb-8'>
       <Header />
       <div className='container mx-auto'>
         <Grids />
