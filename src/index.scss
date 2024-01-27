@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// Colors
+$black: #000000;
+$globalBlue: #4e5ed4;
+$utkarshPurple: rgb(88, 65, 140);
+$bajaBlue: #1772BB;
+$srfBlack: #010101;
+$mahindraRed: #EA4E14;
+$greyHeading: #767072;
+$headerBorder: #EAEAEC;
+$contentBg: #F7F8FA;
+
+// Heading colors
+.h1, .h4, .h6{
+    color: var($black);    
+}
+
+// Sub heading color
+.sub-info{
+    color: $greyHeading;
+}
