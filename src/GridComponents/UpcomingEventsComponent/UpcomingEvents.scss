@@ -1,0 +1,42 @@
+.calendar-style{
+    .date-style{
+        background-color: #F3F3F4;
+        font-size: xx-large;
+        text-align: center;
+    }
+    .year-style{
+        background-color: #CE5151;
+        font-size: small;
+        padding: 0 3px;
+    }
+}
+
+.company-info{
+    h1{
+        color: #7A7A7C;
+        font-size: smaller;
+    }
+    p{
+        font-size: smaller;
+    }
+}
+
+.action-group{
+    button{
+        border-radius: 5px;
+        width: 48%;
+        padding: .5rem 1rem;
+    }
+    .button-primary{
+        color: white;
+        border: none;
+        background-color: #4861D9;
+        float: left;
+    }
+    .button-secondary{
+        color: #4861D9;
+        border: 1px solid #4861D9;
+        background-color: white;
+        float: right;
+    }
+}
