@@ -35,7 +35,7 @@ function Header()  {
     ]
 
     return(
-        <div className='border-b-2 border-b-header-border'>
+        <div className='bg-white border-b-2 border-b-header-border'>
             <div className='h-20 container mx-auto flex flex-row justify-between'>
                 <div className=''>
                     <img className='my-3' src={logo} align="middle" alt="Company Logo" />

@@ -52,7 +52,7 @@ export const BookingGridData = [
     {
         'key': 4,
         'title': 'Mahindra Finance',
-        'logo': {'img': mahindra, 'height': 110, 'width': 95},
+        'logo': {'img': mahindra, 'height': 80, 'width': 80},
         'features': {
             'f1': 'Crisil AAA Rated',
             'f2': 'No Video KYC Required'
@@ -132,4 +132,17 @@ export const UpcomingEventsData = [
             'button2': 'Compare other FDs'
         }
     },
+    // {
+    //     'title': 'Upcoming FD Maturity',
+    //     'company': 'Shriram Finance Corp FD 1',
+    //     'info': 'Renew by',
+    //     'date': new Date(2023, 9, 30),
+    //     'deposit': '25,000',
+    //     'tennure': '18 Months',
+    //     'interest': 8.10,
+    //     'options':{
+    //         'button1': 'Renew Now',
+    //         'button2': 'Compare other FDs'
+    //     }
+    // },
 ]

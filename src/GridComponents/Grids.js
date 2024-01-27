@@ -2,11 +2,12 @@ import './Grids.scss';
 
 import BookingGrid from './BookingGridComponents/BookingGrid';
 import Faq from './FaqComponent/Faq';
+import UpcomingEvents from './UpcomingEventsComponent/UpcomingEvents';
 
 import { Chart } from "react-google-charts";
 import { CaretRight, CaretLeft } from '@phosphor-icons/react';
 
-import { BookingGridData, GraphData, FaqData } from '../data/SampleData';
+import { BookingGridData, GraphData, FaqData, UpcomingEventsData } from '../data/SampleData';
 
 export default function Grids() {
     
@@ -30,7 +31,11 @@ export default function Grids() {
                 <div className='disp-grid template-columns-finance span-2 gap-4'>
                     {BookingGridData.map((card, cardIndex) => <BookingGrid key={card.key} title={card.title} logo={card.logo} features={card.features} color={card.color} interest={card.interest} />)}
                 </div>
-                <div className='border-bl row-span p-4'>3</div>
+                <div className='border-bl row-span'>
+                    <div className='grid grid-rows-3'>
+                        {UpcomingEventsData.map((events, eventsIndex) => <UpcomingEvents key={eventsIndex} title={events.title} company={events.company} info={events.info} date={events.date} deposit={events.deposit} tennure={events.tennure} interest={events.interest} options={events.options} />)}
+                    </div>
+                </div>
                 <div className='span-2'>
                     <div className='flex flex-row justify-between items-center p-4'>
                         <div className='my-3'>

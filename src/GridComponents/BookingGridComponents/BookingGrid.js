@@ -5,7 +5,7 @@ import { CheckCircle } from '@phosphor-icons/react';
 export default function BookingGrid({unique, title, logo, features, interest, color}) {    
     return(
         <div className='border-bl p-2' key={unique}>
-            <div className='p-2' style={{background: color.bgColor}}>
+            <div className='p-2 rounded-md' style={{background: color.bgColor}} >
                 <div className='flex flex-row justify-start items-center'>
                     <img className='p-2' src={logo.img} height={logo.height} width={logo.width} alt={title} />
                     <h1 className='ml-2'>{title}</h1>
