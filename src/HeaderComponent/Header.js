@@ -87,7 +87,7 @@ function Header(isOpen)  {
                         }
                     </div>
                     {isProfileButtonOpen?
-                        <span style={{top: "7%", left:"80%"}} className='absolute inline-block border-bl'>
+                        <span style={{top: "7%", left:"80%"}} className='absolute inline-block border-bl z-10'>
                             {ProfileOptionsData?.map((option, optionIndex) => <ProfileOptions key={optionIndex} icon={option.icon} label={option.label} /> )}
                         </span>: <></>
                     }

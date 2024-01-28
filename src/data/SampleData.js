@@ -185,3 +185,43 @@ export const ProfileOptionsData = [
         'label': 'Logout'
     }
 ]
+
+export const TimelineData = {
+    'months': ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
+    'yearInfo': [
+        {
+            'year': 2024,
+            'color': '#F0EFFF'
+        },
+        {
+            'year': 2025,
+            'color': '#F1F6E5'
+        },
+        {
+            'year': 2026,
+            'color': '#FEF5E7'
+        },
+    ],
+    'data':[
+        {
+            'name': 'Utkarsh FD 1',
+            'start_date': {'year': 2024, 'ind': 0},
+            'end_date': {'year': 2024, 'ind': 7}
+        },
+        {
+            'name': 'Shriram FD Plan 2',
+            'start_date': {'year': 2024, 'ind': 0},
+            'end_date': {'year': 2025, 'ind': 4}
+        },
+        {
+            'name': 'Bajaj Finserv FD 1',
+            'start_date': {'year': 2024, 'ind': 5},
+            'end_date': {'year': 2025, 'ind': 4}
+        },
+        {
+            'name': 'Mahindra FD Plan 2',
+            'start_date': {'year': 2024, 'ind': 5},
+            'end_date': {'year': 2026, 'ind': 6}
+        },
+    ]
+}

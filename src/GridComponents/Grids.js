@@ -3,6 +3,7 @@ import './Grids.scss';
 import BookingGrid from './BookingGridComponents/BookingGrid';
 import Faq from './FaqComponent/Faq';
 import UpcomingEvents from './UpcomingEventsComponent/UpcomingEvents';
+import Timeline from './TimelineComponents/Timeline';
 
 import { Chart } from "react-google-charts";
 import { CaretRight, CaretLeft } from '@phosphor-icons/react';
@@ -27,7 +28,10 @@ export default function Grids() {
                     />
                     </div>
                 </div>
-                <div className='border-bl span-2  p-4'>FD Maturity Timeline</div>
+                <div className='border-bl span-2  p-4'>
+                    <h4>FD Maturity Timeline</h4>
+                    <Timeline />
+                </div>
                 <div className='disp-grid template-columns-finance span-2 gap-4'>
                     {BookingGridData.map((card, cardIndex) => <BookingGrid key={card.key} title={card.title} logo={card.logo} features={card.features} color={card.color} interest={card.interest} />)}
                 </div>
