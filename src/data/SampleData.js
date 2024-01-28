@@ -3,6 +3,8 @@ import mahindra from '../assets/mahindra.png';
 import srf from '../assets/srf.png';
 import utkarsh from '../assets/utkarsh.png';
 
+import { PhoneCall, EnvelopeSimple, User, PiggyBank, Money, SignOut } from '@phosphor-icons/react';
+
 export const BookingGridData = [
     {   
         'key': 1,
@@ -131,18 +133,55 @@ export const UpcomingEventsData = [
             'button1': 'Renew Now',
             'button2': 'Compare other FDs'
         }
+    }
+]
+
+export const HeaderLinksData = [
+    {
+        'key': 0,
+        'label': 'Dashboard',
     },
-    // {
-    //     'title': 'Upcoming FD Maturity',
-    //     'company': 'Shriram Finance Corp FD 1',
-    //     'info': 'Renew by',
-    //     'date': new Date(2023, 9, 30),
-    //     'deposit': '25,000',
-    //     'tennure': '18 Months',
-    //     'interest': 8.10,
-    //     'options':{
-    //         'button1': 'Renew Now',
-    //         'button2': 'Compare other FDs'
-    //     }
-    // },
+    {
+        'key': 1,
+        'label': 'FAQs',
+    },
+    {
+        'key': 2,
+        'label': 'Support',
+        'dropdown': [
+            {
+                'icon': <PhoneCall size={24} weight="thin" />,
+                'info': {
+                    'infoOne': '+91 88777 37777',
+                    'infoTwo': '+91 88777 5666',
+                }
+            },
+            {
+                'icon': <EnvelopeSimple size={24} weight="thin" />,
+                'info': {
+                    'infoOne': 'support@silverbullet.in',
+                    'infoTwo': 'info@silverbullet.in',
+                }
+            }
+        ]
+    }
+]
+
+export const ProfileOptionsData = [
+    {
+        'icon': <User size={32} weight="duotone" />,
+        'label': 'My Profile'
+    },
+    {
+        'icon': <PiggyBank size={32} weight="duotone" />,
+        'label': 'My FDs'
+    },
+    {
+        'icon': <Money size={32} weight="duotone" />,
+        'label': 'My Transactions'
+    },
+    {
+        'icon': <SignOut size={32} weight="duotone" />,
+        'label': 'Logout'
+    }
 ]
